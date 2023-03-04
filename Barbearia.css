@@ -1,42 +1,56 @@
+/* Estilo geral */
+/* -------------------------- */
+
+/* Definir variáveis para reutilização de cores */
+:root {
+    --preto: #222;
+    --branco: #f3f2f2;
+    --vermelho: #d36f6f;
+  }
+  
+  /* Definir padrão */
 .body {
-    padding: 15%;
-    background-color: #f3f2f2;
+    font-family: 'Inter', sans-serif;
     font-size: small;
     line-height: 130%;
-    position: relative;
-    font-family: 'Inter', sans-serif;
-}
-
+    padding: 10%;
+  }
+  
+  /* Definir estilo para links */
 .body a {
-    color: #f3f2f2;
+    color: var(--branco);
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
-    padding:10px 30px;
+    padding: 10px 30px;
     font-size: medium;
-}
-
-.body a:hover {
-    color: #d36f6f;
-}
+  }
   
-.body nav{
-    position:fixed;
-    top:0;
-    left:0;
-    background:#222;
-    width:100%;
+.body a:hover {
+    color: var(--vermelho);
+  }
+
+  /* Estilo para o cabeçalho */
+  /* -------------------------- */
+  
+.body nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--preto);
+    width: 100%;
     height: 13%;
     display: inline-flex;
     align-items: center;
-}
+  }
 
 .body nav img{
     width: 7%;
     margin-left: 3%;
 }
 
-
+  /* Estilo para a seção 1 */
+  /* -------------------------- */
+  
 .section1 img{
     width: 50%;
 }
@@ -57,6 +71,9 @@
     margin-bottom: 5%;
     font-size: x-large;
 }
+
+  /* Estilo para a seção 2 */
+  /* -------------------------- */
 
 .section2{
     padding: 10%;
@@ -87,6 +104,9 @@
     align-items: center;
     margin-right: 10%;
 }
+  
+  /* Estilo para a seção 3 */
+  /* -------------------------- */
 
 .section3{
     display: flex;
@@ -103,10 +123,18 @@ img{
     border-radius: 3%;
 }
 
-footer{
-    background:#222;
+/* Estilo para rodapé */
+/* -------------------------- */
+
+.footer{
+    background-color: #222;
     position: relative;
     bottom: 0;
+    min-height: 15%;
     color: #f3f2f2;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
